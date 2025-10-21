@@ -95,6 +95,7 @@ print(empleados_IT)
 # 2) Calcula el salario medio.
 salario_medio <- mean(empleados$Salario)
 print(paste("El salario medio es:", salario_medio))
+# cat(paste("El salario medio es:", salario_medio))
 
 # 3) Filtra los empleados con salario superior al promedio.
 empleados_salario_alto <- empleados[empleados$Salario > salario_medio, ]
