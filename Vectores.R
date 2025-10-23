@@ -22,7 +22,7 @@ secuencia
 length(secuencia)
 
 # ejercicio 6
-secuencia <- seq(-1,32, by=3)
+secuencia <- seq(-1,32, l=12)
 secuencia
 length(secuencia)
 
@@ -34,7 +34,6 @@ fija
 
 # ejercicio 8
 patron<-rep(c(1,2,3),5)
-# patron<-rep((1:3),5)
 patron
 patronavanzado <-rep(c(1,2,3), each=5)
 patronavanzado
