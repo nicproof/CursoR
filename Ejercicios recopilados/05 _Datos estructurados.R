@@ -43,6 +43,7 @@ library(datasets)
 names(airquality)
 
 # ejercicio 7
+names(airquality)
 dim(airquality)
 nrow(airquality)
 ncol(airquality)
@@ -50,6 +51,7 @@ ncol(airquality)
 # ejercicio 8
 filtro_fila <- subset(airquality, subset = Month == 7)
 filtro_fila
+nrow(filtro_fila)
 
 # ejercicio 9
 filtrar_meses <- subset(airquality, subset = !(Month %in% c(7,8)))
@@ -71,5 +73,9 @@ names(filtro_datos)<- c("tempreratura","viento")
 filtro_datos
 
 # ejercicio 13
-columnafecha <-as_date(paste("1973", airquality$Month, airquality$Day, sep = "-"))
+columnafecha <-as.Date(paste("1973", airquality$Month, airquality$Day, sep = "-"))
 data.frame(airquality, columnafecha)
+
+# ejercicio extra
+filtrado <- !is.na(airquality)
+filtrado
