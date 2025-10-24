@@ -1,20 +1,14 @@
 # ejercicio 1
 library(datasets) # paquete con los datos
 mes <- airquality$Month
-
 if (all(mes != 1)) {
-  
   print("Ningún dato es del mes de enero")
-  
 }
 
 # ejercicio 2
 temperatura <- airquality$Temp
-
 if (any(temperatura > 90)) {
-  
   print("Alguno de los registros tiene temperatura superior a 90 Farenheit")
-  
 }
 
 # ejercicio 3
