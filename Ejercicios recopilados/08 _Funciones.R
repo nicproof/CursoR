@@ -18,6 +18,7 @@ funcion_producto <- function(x, y=x) {
   return(producto)
 }
 funcion_producto(3, -7)
+funcion_producto(3)
 
 #ejercicio 4
 igualdad_nombres <- function(nombre1,nombre2) {
@@ -37,9 +38,10 @@ pares(3,2)
 
 
 #ejercicio 6
+data("airquality")
 pasar_a_celcius <- function(tf){
   tc = (tf-32)*(5/9)
-  return(tc)
+  return(round(tc,1))
 }
-pasar_a_celcius(100)
-pasar_a_celcius(0)
+airquality$Temp_celcius = pasar_a_celcius(airquality$Temp)
+head(airquality)

@@ -43,3 +43,7 @@ while (dinero > 0) {
 }
 dinero
 i
+
+
+
+
