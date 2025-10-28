@@ -22,11 +22,11 @@ funcion_producto(3)
 
 #ejercicio 4
 igualdad_nombres <- function(nombre1,nombre2) {
-  n_nombre1=toupper(nombre1)
-  n_nombre2=toupper(nombre2)
+  n_nombre1=trimws(toupper(nombre1))
+  n_nombre2=trimws(toupper(nombre2))
   return(n_nombre1==n_nombre2)
 }
-igualdad_nombres("mario","Mario")
+igualdad_nombres("mario "," Mario")
 
 #ejercicio 5
 pares <- function(a,b){
